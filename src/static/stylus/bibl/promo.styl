@@ -1,0 +1,92 @@
+.promo
+  background url('../svg/Promo/back.svg') center no-repeat
+  background-size cover
+  display flex
+  flex-direction column
+
+  & .container
+    max-width 600px
+    text-align center
+
+    &>h6
+      color $White
+      font-weight 500
+      margin 0 0 52px
+
+    &>a
+      background rgba(255, 255, 255, 0.1)
+      border-radius 12px
+      padding 16px 36px
+      display block
+      width fit-content
+      margin  0 auto 250px
+      user-select none
+      cursor pointer
+
+  & .quote
+    background $White
+    max-width 1100px
+    padding 65px 150px
+    box-shadow 0px 25px 40px -20px rgba(18, 40, 97, 0.2)
+    border-radius 16px
+    position absolute
+    bottom 0
+    left 50%
+    transform translate(-50%, 40%)
+    text-align center
+    font-weight 600
+
+    & p
+      color $Black
+
+    &>img
+      position absolute
+
+      &.quoteL
+        left 28px
+        top 28px
+      
+      &.quoteR
+        right 28px
+        bottom 28px
+
+@media all and (max-width 920px)
+  .promo
+    & .quote
+      padding 65px 150px
+      width 80%
+
+@media all and (max-width 768px)
+  .promo
+    & .container
+      max-width 100%
+
+      &>h6
+        margin 0 0 34px
+
+    & .quote
+      padding 65px 100px
+
+      & .quoteImg
+        width 34px
+
+@media all and (max-width 560px)
+  .promo
+    & .container
+      &>h6
+        margin 0 auto 28px !important
+
+    & .quote
+      padding 70px 45px
+
+      & .quoteImg
+        width 28px
+
+@media all and (orientation landscape) and (max-width 850px)
+  .promo
+    & .container
+      &>h6
+        margin 0 0 28px
+
+      &>a
+        margin 0 auto 200px

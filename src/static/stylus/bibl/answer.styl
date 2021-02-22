@@ -1,0 +1,71 @@
+.answer
+  background $Gray
+  margin 180px 0 0
+  padding 80px 0 100px
+
+  &_row
+    display flex
+    justify-content space-between
+    border-top 1px solid #E4E5E6
+    padding-top 32px
+    margin-bottom 34px
+
+    &:last-child
+      margin-bottom 0
+
+    &__box
+      max-width 480px
+      width 45%
+
+      &>h6
+        font-weight 500
+        margin-bottom 28px
+        text-transform uppercase
+
+@media all and (max-width 1440px)
+  .answer
+    padding 80px 68px 100px
+
+@media all and (max-width 920px)
+  .answer
+    &_row
+      flex-direction column
+
+      &__box
+        width 100%
+        max-width 100%
+        margin-bottom 60px
+
+        &:nth-child(2)
+          margin-bottom 0
+
+@media all and (max-width 768px)
+  .answer
+    padding 80px 28px 100px
+    margin 90px 0 0
+
+    &_row
+      margin-bottom 60px
+      padding-top 60px
+
+      &:first-child
+        border-top none
+
+@media all and (max-width 560px)
+  .answer
+    margin 40px 0 0
+    padding 40px 28px
+
+    &_row
+      &:first-child
+        padding-top 0
+
+      &__box
+        &>h6
+          text-align center
+          margin-bottom 20px !important
+
+@media all and (orientation landscape) and (max-width 850px)
+  .answer
+    padding 80px 68px
+    margin 80px 0 0
